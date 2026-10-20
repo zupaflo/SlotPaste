@@ -1,0 +1,25 @@
+# Lokale Build- und NuGet-Caches (werden bei Bedarf neu angelegt)
+/.dotnet-home/
+/.nuget-appdata/
+/.nuget-packages/
+**/bin/
+**/obj/
+**/publish/
+
+# Fertige Programme separat als GitHub-Release verteilen
+/SlotPaste.exe
+/SlotPaste-Setup.exe
+/Microsoft .NET SDK*.exe
+
+# Lokale Laufzeitdateien und private Slot-Inhalte
+/.slotpaste-runtime/
+/data/
+/tests/storage-*/
+*.log
+
+# Verworfene Grafikentwürfe und lokale Editor-Einstellungen
+/output/
+/.vs/
+/.vscode/
+*.user
+*.suo
