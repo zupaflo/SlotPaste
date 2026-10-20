@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <EnableWindowsTargeting>true</EnableWindowsTargeting>
+    <AssemblyName>SlotPaste</AssemblyName>
+    <RootNamespace>SlotPasteLauncher</RootNamespace>
+    <ApplicationIcon>$(MSBuildThisFileDirectory)..\SlotPaste.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)..\SlotPaste.ps1">
+      <LogicalName>SlotPaste.ps1</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)..\SlotPaste.ico">
+      <LogicalName>SlotPaste.ico</LogicalName>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>
